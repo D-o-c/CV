@@ -1,0 +1,239 @@
+{
+  "basics": {
+    "name": "Mattia Pini",
+    "title": "Senior Defense Security Engineer",
+    "email": "cv@d-o-c.cloud",
+    "linkedin": "MattiaPini",
+    "profile": "Senior Defense Security Engineer with 8+ years in cybersecurity. At Satispay I built the defensive security capability from the ground up: SIEM and detection engineering, cloud security on AWS and GCP, and security automation with AI agents. Previously focused on data protection and Microsoft cloud security in banking and consulting.",
+    "quote": "Leave this world a little better than you found it",
+    "buttons": [
+      {
+        "label": "Email",
+        "icon": "material-email",
+        "icon_type": "mkdocs",
+        "href": "mailto:cv@d-o-c.cloud",
+        "variant": "email",
+        "external": false
+      },
+      {
+        "label": "LinkedIn",
+        "icon": "fa-brands fa-linkedin-in",
+        "icon_type": "fa",
+        "href": "https://www.linkedin.com/in/MattiaPini",
+        "variant": "linkedin",
+        "external": true
+      },
+      {
+        "label": "GitHub · D-o-c",
+        "icon": "fa-brands fa-github",
+        "icon_type": "fa",
+        "href": "https://github.com/D-o-c",
+        "variant": "github",
+        "external": true
+      },
+      {
+        "label": "GitHub · D-o-c-labs",
+        "icon": "fa-brands fa-square-github",
+        "icon_type": "fa",
+        "href": "https://github.com/D-o-c-labs",
+        "variant": "github",
+        "external": true
+      },
+      {
+        "label": "Doc-Home-ops",
+        "icon": "simple-kubernetes",
+        "icon_type": "mkdocs",
+        "href": "https://github.com/D-o-c-labs/Doc-Home-ops",
+        "variant": "k8s",
+        "external": true
+      },
+      {
+        "label": "Download PDF",
+        "icon": "fa-solid fa-file-pdf",
+        "icon_type": "fa",
+        "href": "assets/MattiaPini_CV.pdf",
+        "variant": "download",
+        "accent": true,
+        "requires_asset": "assets/MattiaPini_CV.pdf",
+        "disabled_label": "Build PDF to enable download"
+      }
+    ]
+  },
+  "experience": [
+    {
+      "period": "2026--Present",
+      "role": "Senior Defense Security Engineer",
+      "company": "Satispay",
+      "location": "Milan",
+      "subtitle": "Defensive Security",
+      "details": [
+        "Co-own the defensive security strategy with the CISO and run sprints for the four-engineer defensive team",
+        "Interim line manager for two engineers; previously line-managed one engineer (2025--2026)",
+        "Leading the migration of the security AI agents to Amazon Bedrock AgentCore",
+        "Security architecture reviews (Keycloak CIAM, Spring Cloud Gateway), vendor risk assessments and audit support (CSSF)"
+      ]
+    },
+    {
+      "period": "2023--2026",
+      "role": "Cloud Security Engineer",
+      "company": "Satispay",
+      "location": "Milan",
+      "subtitle": "Security Team",
+      "details": [
+        "First security engineer alongside the CISO: built the defensive security function from scratch, single-handedly for the first 18 months",
+        "Led the SIEM selection and the Splunk rollout; defined log onboarding standards (CIM) for 20+ sources",
+        "Designed risk-based alerting for customer account takeover",
+        "Built AI agents that triage security alerts and, after analyst approval, handle remediation, stakeholder communication and incident reporting",
+        "Moved AWS WAF to default-deny with self-service allowlisting through Terraform pull requests",
+        "Led AWS and GCP security governance: SCP review, GCP hierarchy redesign, external configuration assessment and remediation",
+        "Led the passkey rollout on Google Workspace"
+      ]
+    },
+    {
+      "period": "2022--2023",
+      "role": "Security Lead Consultant",
+      "company": "Horizon Consulting",
+      "logo": "assets/logos/horizon-consulting.svg",
+      "location": "Milan",
+      "details": [
+        "Azure/M365/Infrastructure cloud security assessments for an international energy company",
+        "Defined architecture for Microsoft Data Loss Prevention on macOS devices in a nationwide energy enterprise",
+        "Developed a PowerShell module to automate Azure Multi-Factor Authentication management",
+        "Implemented process workflows with Microsoft Power Automate for a global optical company",
+        "Performed microservices security analysis (JWT vs mTLS)"
+      ]
+    },
+    {
+      "period": "2020--2022",
+      "role": "Security Project Manager",
+      "company": "UniCredit Services",
+      "logo": "assets/logos/unicredit-services.svg",
+      "location": "Milan",
+      "subtitle": "Data Security Specialist",
+      "details": [
+        "Managed enterprise Azure/O365 security projects (Hybrid AD, MIP, DLP, Sentinel)",
+        "Defined security KPIs and toxic combination controls",
+        "Supported internal and external security audits",
+        "Developed data security governance policies and standards"
+      ]
+    },
+    {
+      "period": "2018--2020",
+      "role": "Security and Technical Application Manager",
+      "company": "UniCredit Services",
+      "logo": "assets/logos/unicredit-services.svg",
+      "location": "Milan",
+      "subtitle": "Data Security Specialist",
+      "details": [
+        "Defined data security requirements for new applications",
+        "Designed application architectures with data security best practices",
+        "Implemented enterprise data security policies and operating models",
+        "Authored technical documentation for secure data flows"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "year": 2022,
+      "name": "Certified Kubernetes Administrator (CKA)",
+      "issuer": "Linux Foundation"
+    }
+  ],
+  "education": [
+    {
+      "period": "2018--2020",
+      "degree": "1st Level University Master Degree",
+      "institution": "CEFriel (Politecnico di Milano)",
+      "location": "Milan",
+      "field": "Information Security Specialist"
+    },
+    {
+      "period": "2014--2018",
+      "degree": "Master Degree",
+      "institution": "Politecnico di Milano",
+      "location": "Milan",
+      "field": "Computer Science and Engineering"
+    },
+    {
+      "period": "2010--2014",
+      "degree": "Bachelor's Degree",
+      "institution": "Politecnico di Milano",
+      "location": "Milan",
+      "field": "Computer Science and Engineering"
+    }
+  ],
+  "skills": {
+    "technical": [
+      {
+        "category": "Detection and SIEM",
+        "details": "Splunk (SPL, CIM, risk-based alerting), log onboarding and parsing pipelines, OpenSearch",
+        "level": 5
+      },
+      {
+        "category": "Automation and AI",
+        "details": "n8n, Make.com, LLM agents for alert triage and incident handling (Claude, Gemini), Amazon Bedrock AgentCore, Slack and GitHub integrations, Python",
+        "level": 5
+      },
+      {
+        "category": "Cloud Security",
+        "details": "AWS (Organizations, SCP, CloudTrail, GuardDuty, Security Hub, WAF), GCP (resource hierarchy, configuration hardening), Azure, Terraform",
+        "level": 5
+      },
+      {
+        "category": "Incident Response",
+        "details": "End-to-end incident handling, automated response playbooks, stakeholder communication, incident reporting",
+        "level": 4
+      },
+      {
+        "category": "Identity",
+        "details": "Keycloak/CIAM, OAuth2/OIDC, passkeys, Google Workspace, Entra ID/MFA, Conditional Access, joiner/mover/leaver automation",
+        "level": 4
+      },
+      {
+        "category": "Architecture",
+        "details": "Security design reviews, security requirements, threat modeling, API gateway and service authentication (JWT vs mTLS), vendor risk, audit support in a regulated fintech",
+        "level": 4
+      },
+      {
+        "category": "Data Protection",
+        "details": "Data classification, Microsoft Purview/MIP, DLP controls, anonymization, security policy and standard definition",
+        "level": 5
+      },
+      {
+        "category": "Kubernetes",
+        "details": "Kubernetes (CKA), Talos, FluxCD GitOps, Cilium network policies, External Secrets and SOPS, Docker, Rancher",
+        "level": 4
+      }
+    ],
+    "languages": [
+      {
+        "language": "English",
+        "proficiency": "C1 Level"
+      },
+      {
+        "language": "Italian",
+        "proficiency": "Native Language"
+      }
+    ],
+    "soft": [
+      "Adaptability",
+      "Communication",
+      "Critical Thinking",
+      "Problem-Solving",
+      "Stakeholder Management"
+    ]
+  },
+  "hobbies": [
+    "In my spare time, I run a self-hosted Kubernetes homelab (Talos, FluxCD GitOps, Cilium) for home-network services and home automation.",
+    "Moreover, I play the Cajon in a band, performing live around Milan.",
+    "I also like role-playing games like Pathfinder and D&D.",
+    "Until some years ago, I was a scout group leader in an AGESCI scout group."
+  ],
+  "pdf": {
+    "photo_filename": "profilepic.jpg",
+    "gdpr_notice": "In compliance with the GDPR and Italian Legislative Decree no. 196 dated 30/06/2003, I hereby authorize the recipient of this document to use and process my personal details for the purpose of recruiting and selecting staff and I confirm to be informed of my rights in accordance to art. 7 of the above mentioned Decree.",
+    "photo_height": "64pt",
+    "photo_frame": "0.4pt",
+    "geometry_scale": "0.75"
+  }
+}

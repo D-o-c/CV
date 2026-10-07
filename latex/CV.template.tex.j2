@@ -1,0 +1,79 @@
+%% generated from CV.template.tex.j2
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+\moderncvstyle{casual}
+\moderncvcolor{blue}
+\nopagenumbers{}
+
+\usepackage[scale={{- pdf.geometry_scale|latex_escape -}}]{geometry}
+\usepackage[super]{nth}
+\usepackage[none]{hyphenat}
+
+\name{ {{- basics.first_name|latex_escape -}} }{ {{- basics.last_name|latex_escape -}} }
+\title{ {{- basics.title|latex_escape -}} }
+{% if basics.phone %}
+\phone[mobile]{ {{- basics.phone|latex_escape -}} }
+{% endif %}
+\email{ {{- basics.email|latex_escape -}} }
+\social[linkedin]{ {{- basics.linkedin|latex_escape -}} }
+\photo[{{- pdf.photo_height|latex_escape -}}][{{- pdf.photo_frame|latex_escape -}}]{ {{- pdf.photo_filename|latex_escape -}} }
+\quote{ {{- basics.quote|latex_escape -}} }
+
+\begin{document}
+\makecvtitle
+
+\section{Experiences}
+{% for item in experience %}
+\cventry{ {{- item.period|latex_escape -}} }{ {{- item.role|latex_escape -}} }{ {{- item.company|latex_escape -}} }{ {{- item.location|default('', true)|latex_escape -}} }{ {{- item.subtitle|default('', true)|latex_escape -}} }{{ '{%' }}
+{% if item.details %}Key Qualifications and Achievements:
+\begin{itemize}
+{% for detail in item.details %}
+\item {{ detail|latex_escape }}
+{% endfor %}
+\end{itemize}
+{% endif %}
+}
+
+{% endfor %}
+\section{Certifications}
+{% for cert in certifications %}
+\cventry{ {{- cert.year|string|latex_escape -}} }{ {{- cert.name|latex_escape -}} }{ {{- cert.issuer|latex_escape -}} }{}{}{}
+{% endfor %}
+
+\section{Education}
+{% for edu in education %}
+\cventry{ {{- edu.period|latex_escape -}} }{ {{- edu.degree|latex_escape -}} }{ {{- edu.institution|latex_escape -}} }{}{}{}
+{% endfor %}
+
+\section{Technical Skills}
+{% for skill in skills.technical %}
+\cvitem{ {{- skill.category|latex_escape -}} }{ {{- skill.details|latex_escape -}} }
+{% endfor %}
+
+\section{Languages}
+{% for language in skills.languages %}
+\cvitem{ {{- language.language|latex_escape -}} }{ {{- language.proficiency|latex_escape -}} }
+{% endfor %}
+
+\section{Soft Skills}
+{% for pair in soft_skill_pairs %}
+\cvlistdoubleitem{ {{- pair[0]|latex_escape -}} }{ {{- pair[1]|latex_escape -}} }
+{% endfor %}
+
+\begin{minipage}[t]{\linewidth}
+\section{Hobbies and Interests}
+{% for hobby in hobbies %}
+{{ hobby|latex_escape }}\\
+
+{% endfor %}
+\end{minipage}
+
+\vfill
+
+\begin{flushright}
+  \begin{minipage}[b][][t]{0.5\linewidth}
+    \tiny {{ pdf.gdpr_notice|latex_escape }}
+  \end{minipage}
+\end{flushright}
+
+\end{document}

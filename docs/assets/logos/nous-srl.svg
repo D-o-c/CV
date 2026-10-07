@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">NOUS Srl</title>
+  <desc id="desc">Monogram logo for NOUS Srl.</desc>
+  <defs>
+    <linearGradient id="g3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#70d7ff"/>
+      <stop offset="100%" stop-color="#59a4ff"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="56" height="56" rx="14" fill="#101827"/>
+  <rect x="14" y="14" width="36" height="36" rx="10" fill="#1d2638"/>
+  <text x="32" y="38" text-anchor="middle" font-size="15" font-family="Arial, sans-serif" fill="url(#g3)" font-weight="700">NO</text>
+</svg>
