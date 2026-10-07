@@ -1,0 +1,19 @@
+__pycache__/
+*.pyc
+.venv/
+.uv-cache/
+tools/__pycache__/
+.DS_Store
+.nodeterm/
+.playwright-mcp/
+
+# Build outputs
+dist/
+site/
+tmp/
+latex/CV.generated.*
+docs/assets/MattiaPini_CV.pdf
+
+# Private build (real photo and phone from 1Password): never commit
+latex/private/
+latex/CV.private.*

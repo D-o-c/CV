@@ -1,0 +1,57 @@
+site_name: Mattia Pini
+site_url: https://cv.d-o-c.cloud/
+site_description: Senior Defense Security Engineer profile and curriculum vitae.
+repo_url: https://github.com/D-o-c/CV
+repo_name: D-o-c/CV
+use_directory_urls: false
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+    - toc.follow
+    - search.suggest
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: slate
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: black
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  font:
+    text: Space Grotesk
+    code: JetBrains Mono
+
+nav:
+  - CV: index.md
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css
+  - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/v4-shims.min.css
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/extra.js
