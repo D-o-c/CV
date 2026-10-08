@@ -4,7 +4,7 @@
     "title": "Senior Defense Security Engineer",
     "email": "cv@d-o-c.cloud",
     "linkedin": "MattiaPini",
-    "profile": "Senior Defense Security Engineer with 8+ years in cybersecurity. At Satispay I built the defensive security capability from the ground up: SIEM and detection engineering, cloud security on AWS and GCP, and security automation with AI agents. Previously focused on data protection and Microsoft cloud security in banking and consulting.",
+    "profile": "Senior Defense Security Engineer with 8+ years in cybersecurity. At Satispay I built the defensive security capability from the ground up: SIEM and detection engineering, cloud security on AWS and GCP, and security automation with AI agents. Previously focused on data protection and Microsoft cloud security in banking and consulting. Speaker at AWS Summit Milan and RomHack Camp in 2026.",
     "quote": "Leave this world a little better than you found it",
     "buttons": [
       {
@@ -130,6 +130,34 @@
         "Implemented enterprise data security policies and operating models",
         "Authored technical documentation for secure data flows"
       ]
+    }
+  ],
+  "talks": [
+    {
+      "year": 2026,
+      "title": "Keep caLLM and Let It Block: Agentic SOAR with n8n + Splunk",
+      "type": "Workshop",
+      "event": "RomHack Camp",
+      "location": "Rome",
+      "url": "https://romhack.io/romhack-schedule/",
+      "details": "Hands-on workshop delivered with three Satispay colleagues. I designed and built the entire lab: a live AWS environment (WAF, Splunk, n8n, Amazon Bedrock; Terraform, Ansible) where participants built an AI-assisted incident-response pipeline with human approval."
+    },
+    {
+      "year": 2026,
+      "title": "Satispay: proteggere le API con AWS WAF Mobile SDK",
+      "type": "Talk (IND335, Advanced)",
+      "event": "AWS Summit Milan",
+      "location": "Milan",
+      "url": "https://aws.amazon.com/it/events/summits/milano/agenda/?ams%23interactive-card-vertical%23pattern-data--1491781557.search=mobile",
+      "details": "How integrating AWS WAF with the Satispay mobile app through the Mobile SDK virtually eliminated anomalous traffic to our APIs. Co-presented with the CISO (opening and closing); I delivered the technical content."
+    }
+  ],
+  "awards": [
+    {
+      "year": 2026,
+      "name": "1st in Italy, 3rd in EMEA",
+      "event": "Splunk Boss of the SOC (BOTS)",
+      "details": "With the Satispay Security Team, among 358 teams"
     }
   ],
   "certifications": [
