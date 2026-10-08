@@ -35,6 +35,20 @@
 }
 
 {% endfor %}
+{% if talks %}
+\section{Talks and Workshops}
+{% for talk in talks %}
+\cventry{ {{- talk.year|string|latex_escape -}} }{ {{- talk.title|latex_escape -}} }{ {{- talk.event|latex_escape -}} }{ {{- talk.location|default('', true)|latex_escape -}} }{ {{- talk.type|default('', true)|latex_escape -}} }{ {{- talk.details|default('', true)|latex_escape -}} }
+{% endfor %}
+
+{% endif %}
+{% if awards %}
+\section{Awards}
+{% for award in awards %}
+\cventry{ {{- award.year|string|latex_escape -}} }{ {{- award.name|latex_escape -}} }{ {{- award.event|latex_escape -}} }{}{}{ {{- award.details|default('', true)|latex_escape -}} }
+{% endfor %}
+
+{% endif %}
 \section{Certifications}
 {% for cert in certifications %}
 \cventry{ {{- cert.year|string|latex_escape -}} }{ {{- cert.name|latex_escape -}} }{ {{- cert.issuer|latex_escape -}} }{}{}{}
