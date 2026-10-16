@@ -137,6 +137,23 @@ def validate_resume(data: dict[str, Any]) -> None:
                 errors.append(f"experience[{idx}] missing '{key}'")
         if "details" in item and not isinstance(item["details"], list):
             errors.append(f"experience[{idx}].details must be an array")
+    optional_sections = {
+        "talks": ("year", "title", "event"),
+        "awards": ("year", "name", "event"),
+    }
+    for section, required in optional_sections.items():
+        items = data.get(section, [])
+        if not isinstance(items, list):
+            errors.append(f"'{section}' must be an array")
+            continue
+        for idx, item in enumerate(items):
+            if not isinstance(item, dict):
+                errors.append(f"{section}[{idx}] must be an object")
+                continue
+            for key in required:
+                if key not in item:
+                    errors.append(f"{section}[{idx}] missing '{key}'")
+
     for idx, item in enumerate(education or []):
         if not isinstance(item, dict):
             errors.append(f"education[{idx}] must be an object")
@@ -186,6 +203,8 @@ def build_context(
     return {
         "basics": basics,
         "experience": data["experience"],
+        "talks": data.get("talks", []),
+        "awards": data.get("awards", []),
         "certifications": data["certifications"],
         "education": data["education"],
         "skills": data["skills"],

@@ -13,7 +13,7 @@
   <div class="cv-hero__content">
     <h2 class="cv-hero__name">Mattia Pini</h2>
     <p class="cv-hero__role">Senior Defense Security Engineer</p>
-    <p>Senior Defense Security Engineer with 8+ years in cybersecurity. At Satispay I built the defensive security capability from the ground up: SIEM and detection engineering, cloud security on AWS and GCP, and security automation with AI agents. Previously focused on data protection and Microsoft cloud security in banking and consulting.</p>
+    <p>Senior Defense Security Engineer with 8+ years in cybersecurity. At Satispay I built the defensive security capability from the ground up: SIEM and detection engineering, cloud security on AWS and GCP, and security automation with AI agents. Previously focused on data protection and Microsoft cloud security in banking and consulting. Speaker at AWS Summit Milan and RomHack Camp in 2026.</p>
     <p class="cv-hero__quote">"Leave this world a little better than you found it"</p>
     <div class="cv-link-grid">
       <a class="cv-chip cv-chip--icononly cv-chip--email" href="mailto:cv@d-o-c.cloud" title="Email" aria-label="Email"><span class="cv-chip__icon cv-chip__icon--mkdocs"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m20 8-8 5-8-5V6l8 5 8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"/></svg></span><span class="cv-chip__label">Email</span></a>
@@ -114,6 +114,31 @@
     </ul>
   </article>
 </div>
+
+## Talks and Workshops
+
+<div class="cv-timeline">
+  <article class="cv-card reveal">
+    <header class="cv-card__header">
+      <h3><a href="https://romhack.io/romhack-schedule/" target="_blank" rel="noopener">Keep caLLM and Let It Block: Agentic SOAR with n8n + Splunk</a></h3>
+      <p class="cv-card__period">2026</p>
+    </header>
+    <p class="cv-card__meta">Workshop · RomHack Camp · Rome</p>
+    <p>Hands-on workshop delivered with three Satispay colleagues. I designed and built the entire lab: a live AWS environment (WAF, Splunk, n8n, Amazon Bedrock; Terraform, Ansible) where participants built an AI-assisted incident-response pipeline with human approval.</p>
+  </article>
+  <article class="cv-card reveal">
+    <header class="cv-card__header">
+      <h3><a href="https://aws.amazon.com/it/events/summits/milano/agenda/?ams%23interactive-card-vertical%23pattern-data--1491781557.search=mobile" target="_blank" rel="noopener">Satispay: proteggere le API con AWS WAF Mobile SDK</a></h3>
+      <p class="cv-card__period">2026</p>
+    </header>
+    <p class="cv-card__meta">Talk (IND335, Advanced) · AWS Summit Milan · Milan</p>
+    <p>How integrating AWS WAF with the Satispay mobile app through the Mobile SDK virtually eliminated anomalous traffic to our APIs. Co-presented with the CISO (opening and closing); I delivered the technical content.</p>
+  </article>
+</div>
+
+## Awards
+
+- **2026** — 1st in Italy, 3rd in EMEA, Splunk Boss of the SOC (BOTS) — With the Satispay Security Team, among 358 teams
 
 ## Certifications
 

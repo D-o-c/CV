@@ -494,6 +494,48 @@ def write_markdown(resume: dict[str, Any], profile_images: dict[str, str], has_p
     lines.append("</div>")
     lines.append("")
 
+    talks = resume.get("talks", [])
+    if talks:
+        lines.append("## Talks and Workshops")
+        lines.append("")
+        lines.append('<div class="cv-timeline">')
+        for talk in talks:
+            title = html.escape(str(talk.get("title", "")))
+            url = str(talk.get("url", "")).strip()
+            if url:
+                title = f'<a href="{html.escape(url)}" target="_blank" rel="noopener">{title}</a>'
+            meta_parts = [
+                html.escape(str(talk.get(key, "")).strip())
+                for key in ("type", "event", "location")
+                if str(talk.get(key, "")).strip()
+            ]
+            lines.append('  <article class="cv-card reveal">')
+            lines.append('    <header class="cv-card__header">')
+            lines.append(f"      <h3>{title}</h3>")
+            lines.append(f"      <p class=\"cv-card__period\">{html.escape(str(talk.get('year', '')))}</p>")
+            lines.append("    </header>")
+            if meta_parts:
+                lines.append(f"    <p class=\"cv-card__meta\">{' · '.join(meta_parts)}</p>")
+            details = str(talk.get("details", "")).strip()
+            if details:
+                lines.append(f"    <p>{html.escape(details)}</p>")
+            lines.append("  </article>")
+        lines.append("</div>")
+        lines.append("")
+
+    awards = resume.get("awards", [])
+    if awards:
+        lines.append("## Awards")
+        lines.append("")
+        for award in awards:
+            year = html.escape(str(award.get("year", "")))
+            name = html.escape(str(award.get("name", "")))
+            event = html.escape(str(award.get("event", "")))
+            details = str(award.get("details", "")).strip()
+            suffix = f" — {html.escape(details)}" if details else ""
+            lines.append(f"- **{year}** — {name}, {event}{suffix}")
+        lines.append("")
+
     lines.append("## Certifications")
     lines.append("")
     if resume["certifications"]:
